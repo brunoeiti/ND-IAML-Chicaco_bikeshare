@@ -202,6 +202,8 @@ min_trip = sorted_duration[0]
 max_trip = sorted_duration[-1]
 mean_trip = sum(sorted_duration) / len(sorted_duration)
 median_trip = sorted_duration[len(sorted_duration)//2]
+if len(sorted_duration) % 2 == 0:
+    median_trip = (median_trip + sorted_duration[len(sorted_duration)//2 + 1]) / 2.0
 
 
 
